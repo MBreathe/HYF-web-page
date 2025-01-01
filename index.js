@@ -16,7 +16,7 @@ function hideSidebar() {
     const burgerHorizontal = document.querySelector('#burger-icon-horizontal');
     const burgerVertical = document.querySelector('#burger-icon-vertical');
     const sidebar = document.querySelector('.side-bar');
-    sidebar.style.right = '-300px';
+    sidebar.style.right = '-600px';
     burgerHorizontal.style.display = 'block';
     burgerVertical.style.display = 'none';
 }

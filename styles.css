@@ -935,6 +935,9 @@ footer {
     .burger {
         display: block;
     }
+    .side-bar {
+        display: flex;
+    }
     .lightswitch-container {
         display: none;
     }
