@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <title>HYF showcase</title>
+</head>
+<body>
+    <div class="container">
+        <header class="topnav border-s">
+            <div class="logo-container">
+                <img class="logo" src="resources/logo/logo.png" alt="makebreathe logo">
+                <img class="hover-logo" src="resources/logo/logo-hover.png" alt="logo hover">
+                <img class="active-logo" src="resources/logo/logo-active.png" alt="logo active">
+            </div>
+            <h2 id="always-in-search-animation">always in search of <span class="auto-type"></span></h2>
+            <ul class="dm-mono-regular nav-menu">
+                <li><button class="button-about" onclick="window.location.href='#about';">about</button></li>
+                <li><button class="button-photography" onclick="window.location.href='#photography';">photography</button></li>
+                <li><button class="button-design" onclick="window.location.href='#design';">design</button></li>
+                <li><button class="button-contact" onclick="window.location.href='#contact';">contact</button></li>
+            </ul>
+            <div class="burger">
+                <img onclick=showSidebar() id="burger-icon-horizontal" src="resources/burger-img.png" alt="burger menu">
+                <img onclick=hideSidebar() id="burger-icon-vertical" src="resources/burger-vertical.png" alt="burger menu">
+            </div>
+            <ul class="dm-mono-regular side-bar">
+                <li><button class="button-about" onclick="window.location.href='#about'; hideSidebar()">about</button></li>
+                <li><button class="button-photography" onclick="window.location.href='#photography'; hideSidebar()">photography</button></li>
+                <li><button class="button-design" onclick="window.location.href='#design'; hideSidebar()">design</button></li>
+                <li><button class="button-contact" onclick="window.location.href='#contact'; hideSidebar()">contact</button></li>
+            </ul>
+            <div class="lightswitch-container">
+                <img class="lightswitch" src="resources/lightswitch/lightswitch.png" alt="lightswitch">
+                <img class="lightswitch-hover" src="resources/lightswitch/lightswitch-hover.png" alt="lightswitch dark">
+            </div>
+        </header>
+        <section class="container-grid">
+            <div class="left-content border-s">
+                <div class="circle-container">
+                    <div class="circle one"></div>
+                    <div class="circle two"></div>
+                    <div class="circle three"></div>
+                </div>
+            </div>
+            <div class="right-content border-s" id="main-page-right-container">
+                <div class="dm-mono-medium never-ending-search">
+                    <h1>THE NEVER ENDING SEARCH</h1>
+                    <div class="search-container">
+                        <h1 class="search-one">SEARCH</h1>
+                        <h1 class="search-two">SEARCH</h1>
+                        <h1 class="search-three">SEARCH</h1>
+                        <h1 class="search-four">SEARCH</h1>
+                    </div>
+                </div>
+                <div class="placeholder-container">
+                    <div class="placeholder-img-xl">
+                        <span>IMG</span>
+                        <span>250x250</span>
+                    </div>
+                    <div class="placeholder-img-xl">
+                        <span>IMG</span>
+                        <span>250x250</span>
+                    </div>
+                    <div class="placeholder-img-l">
+                        <span>IMG</span>
+                        <span>200x200</span>
+                    </div>
+                    <div class="placeholder-img-m">
+                        <span>IMG</span>
+                        <span>150x150</span>
+                    </div>
+                    <div class="placeholder-img-m">
+                        <span>IMG</span>
+                        <span>150x150</span>
+                    </div>
+                    <div class="placeholder-img-m">
+                        <span>IMG</span>
+                        <span>150x150</span>
+                    </div>
+                    <div class="placeholder-img-s">
+                        <span>IMG</span>
+                        <span>100x100</span>
+                    </div>
+                    <div class="placeholder-img-s">
+                        <span>IMG</span>
+                        <span>100x100</span>
+                    </div>
+                    <div class="placeholder-img-s">
+                        <span>IMG</span>
+                        <span>100x100</span>
+                    </div>
+                </div>
+                <div class="perfection-container">
+                    <h1 class="perfection-one">FOR PERFECTION</h1>
+                    <h1 class="perfection-two">FOR PERFECTION</h1>
+                    <h1 class="perfection-three">FOR PERFECTION</h1>
+                    <h1 class="perfection-four">FOR PERFECTION</h1>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <button id="back-to-top" class="border-l">
+        <img src="resources/chevron-up.png" alt="arrow icon">
+    </button>
+
+    <section class="sticky-container" id="about">
+        <div class="tab-about border-l">
+            <h1>ABOUT</h1>
+        </div>
+        <div class="about-content border-s">
+            <div class="grid-top-left border-s">
+                <h2 class="dm-mono-medium txt-align-center">innovation is the heart of a great design</h2>
+                <p>With a unique approach that seamlessly integrates<br>
+                    photography into my work, I strive to create<br>
+                    websites and designs that are visually striking,<br>
+                    meaningful, and engaging.</p>
+                <p class="txt-align-right">As someone who works as well with people<br>
+                    as I do with machines, I value collaboration and<br>
+                    effective communication just as much as<br>
+                    the technical side of design.</p>
+                <p>My process is a blend of creativity,<br>
+                    precision, and human connection, ensuring that<br>
+                    each project not only meets expectations but exceeds them.</p>
+            </div>
+            <div class="flex-center grid-bottom-left border-s">
+                <h2 class="dm-mono-medium">DESIGN//PHOTOGRAPHY//LIFESTYLE//MUSIC//RANDOM</h2>
+            </div>
+            <div class="grid-right border-s">
+                <img class="circles-img" src="resources/circles.png" alt="image of circles">
+            </div>
+        </div>
+    </section>
+
+    <section class="sticky-container" id="photography">
+        <div class="tab-photography border-l">
+            <h1>PHOTOGRAPHY</h1>
+        </div>
+        <div class="photography-container border-l">
+            <div class="photography-content border-s">
+                <img class="img-one horizontal-imgs" src="resources/photography/fishing-horizontal.jpg" alt="image of a fishing village">
+                <img class="img-two vertical-imgs" src="resources/photography/doors-vertical.jpg" alt="image of a doors">
+                <img class="img-three horizontal-imgs" src="resources/photography/city-horizontal.jpg" alt="image of a city">
+                <img class="img-four vertical-imgs" src="resources/photography/snowy-mountain-vertical.jpg" alt="image of a snowy mountain">
+
+                <img class="img-five horizontal-imgs" src="resources/photography/birds-horizontal.jpg" alt="image of a birds">
+                <img class="img-six vertical-imgs" src="resources/photography/mountain-vertical.jpg" alt="image of a mountain village">
+                <img class="img-seven horizontal-imgs" src="resources/photography/greek-horizontal.jpg" alt="image of ruins">
+                <img class="img-eight vertical-imgs" src="resources/photography/tree-moss-vertical.jpg" alt="image of a tree with moss">
+            </div>
+        </div>
+    </section>
+
+    <section class="sticky-container" id="design">
+        <div class="tab-design border-l">
+            <h1>DESIGN</h1>
+        </div>
+        <div class="design-container border-l">
+            <div class="design-element-container">
+                <div class="border-s">
+                    <h2 class="dm-mono-medium">DESINGNING<br>
+                        ELEMENTS<br>
+                        OF THE<br>
+                        FUTURE
+                    </h2>
+                    <div class="design-circle-top"></div>
+                    <div class="design-circle-bottom"></div>
+                </div>
+                <div class="design-list-border">
+                    <ul>
+                        <li>web-pages</li>
+                        <li>posters</li>
+                        <li>logos</li>
+                        <li>apps</li>
+                        <li>products</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <img src="resources/height-width-design.png" alt="image of a design element">
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-l" id="contact">
+        <div class="tab-contact border-l">
+            <h1>CONTACT</h1>
+        </div>
+        <div class="contact-container">
+            <div class="emblem-container">
+                <img src="resources/emblem.png" alt="image of emblem" class="emblem">
+                <p>this web-page, assets, layouts<br>
+                    and code were written/designed<br>
+                    by <a href="https://www.instagram.com/makebreathe" target="_blank">makebreathe</a><br>
+                    {Ilya Bubnov}
+                </p>
+            </div>
+            <div class="links-container">
+                <div class="partial-border-links">
+                    <ul>
+                        <li><a href="#">instagram</a></li>
+                        <li><a href="#">telegram</a></li>
+                        <li><a href="#">youtube</a></li>
+                        <li><a href="#">patreon</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p id="footer-p">This web-page was created as a demo project<br>
+                strictly for non-commercial use. It will be<br>
+                used as an application assignment for<br>
+                {Hack Your Future}.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
