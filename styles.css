@@ -821,6 +821,27 @@ footer {
     adapting everything for smaller screens
 */
 
+@media (max-height: 1320px) {
+    .circle-container {
+        width: 70vh;
+        height: 70vh;
+    }
+    .grid-right img {
+        width: 78vh;
+    }
+    .about-content {
+        height: 88vh;
+    }
+    .design-container {
+        height: 88vh;
+    }
+}
+@media (max-height: 1043px) {
+    .perfection-container {
+        display: none;
+    }
+}
+
 @media (max-width: 1600px) {
     .container {
         margin: 1rem;
