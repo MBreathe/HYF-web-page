@@ -39,7 +39,7 @@ const typed = new Typed(".auto-type", {
 const scrollToTopBtn = document.getElementById("back-to-top");
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 1000) { // Show after 300px of scroll
+    if (window.scrollY > 1000) {
         scrollToTopBtn.style.display = "block";
     } else {
         scrollToTopBtn.style.display = "none";
@@ -48,8 +48,8 @@ window.addEventListener("scroll", () => {
 
 scrollToTopBtn.addEventListener("click", () => {
     window.scrollTo({
-        top: 0, // Scroll to the top
-        behavior: "smooth" // Smooth scrolling
+        top: 0,
+        behavior: "smooth"
     });
 });
 
